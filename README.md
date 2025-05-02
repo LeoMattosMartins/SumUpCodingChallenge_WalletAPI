@@ -1,34 +1,43 @@
-# Wallet API (Golang)
+# Wallet API (Go)
 
-A simple RESTful API to create wallets, check balances, deposit, and withdraw money.
+A simple RESTful API to create wallets, check balances, deposit, and withdraw money. /
+Uma API RESTful simples para criar carteiras, consultar saldos, depositar e sacar dinheiro.
 
-## 🚀 Tech Stack
+---
 
-- Go
-- Gin (HTTP framework)
-- GORM (ORM)
-- SQLite (Database)
+## Tech Stack / Tecnologias Utilizadas
 
-## ⚙️ Setup
+- Go  
+- Gin (HTTP framework / framework HTTP)  
+- GORM (ORM)  
+- SQLite (Database / Banco de dados)  
+
+---
+
+## ⚙️ Setup / Configuração
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/wallet-api-go
+git clone https://github.com/LeoMattosMartins/SumUpCodingChallenge_WalletAPI
 cd wallet-api-go
 go run .
 ```
 
-## 🔍 API Endpoints
+---
 
-| Method | Endpoint                     | Description           |
-|--------|------------------------------|-----------------------|
-| POST   | /api/wallets                 | Create a wallet       |
-| GET    | /api/wallets/:id             | Get wallet balance    |
-| POST   | /api/wallets/:id/deposit     | Deposit money         |
-| POST   | /api/wallets/:id/withdraw    | Withdraw money        |
+## API Endpoints / Endpoints da API
 
-## 🧪 Testing
+| Method / Método | Endpoint                  | Description / Descrição           |
+|------------------|---------------------------|-----------------------------------|
+| POST             | /api/wallets              | Create a wallet / Criar carteira |
+| GET              | /api/wallets/:id          | Get balance / Consultar saldo     |
+| POST             | /api/wallets/:id/deposit  | Deposit money / Depositar dinheiro |
+| POST             | /api/wallets/:id/withdraw | Withdraw money / Sacar dinheiro   |
 
-You can test the endpoints using curl or Postman:
+---
+
+## Testing / Testes
+
+Use `curl` or Postman / Use `curl` ou Postman para testar os endpoints abaixo:
 
 ```bash
 curl -X POST http://localhost:8080/api/wallets
@@ -36,4 +45,3 @@ curl -X POST http://localhost:8080/api/wallets/1/deposit -H "Content-Type: appli
 curl -X POST http://localhost:8080/api/wallets/1/withdraw -H "Content-Type: application/json" -d '{"amount": 20}'
 curl http://localhost:8080/api/wallets/1
 ```
-

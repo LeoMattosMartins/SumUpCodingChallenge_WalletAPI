@@ -1,6 +1,7 @@
 # Wallet API (Go)
 
-A simple RESTful API to create wallets, check balances, deposit, and withdraw money. /
+A simple RESTful API to create wallets, check balances, deposit, and withdraw money. 
+
 Uma API RESTful simples para criar carteiras, consultar saldos, depositar e sacar dinheiro.
 
 ---
